@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="row">
+    <div class="col-5">
+      <div class="card shadow">
+        <div class="card-body">
+          <strong> Book Flights, Hotels and Holiday Packages.</strong>
+          <br>
+          <button type="button" class="btn btn-outline-danger" style="margin-left:10px;margin-top: 10px;">ONE WAY</button>
+          <button type="button" class="btn btn-outline-danger" style="margin-left:10px;margin-top: 10px;">Round TRIP</button>
+          <button type="button" class="btn btn-outline-danger" style="margin-left:10px;margin-top: 10px;">MULTI-CITY</button>
+          <button type="button" class="btn btn-outline-danger" style="margin-left:10px;margin-top: 10px;">CHARTER</button>
+
+          <div style="margin-top:15px;">
+            <label>
+              Depart from <input type="text" name="to" list="airports" style="width: 85px;">
+            </label>
+            <i class="fas fa-exchange-alt"></i>
+
+            <label>
+              Going to <input type="text" name="to" list="airports" style="width: 85px;">
+            </label>
+          </div>
+          <br>
+          <label>Departure Date: <input type=datetime-local name=totime step=3600 style="width: 55px;"></label>
+
+          <label>Return Date: <input type=datetime-local name=totime step=3600 style="width: 55px;"></label>
+          <br>
+
+          <select class="form-select" aria-label="Default select example" style="width:50%; margin-top:10px">
+           <option selected>Travellers Class</option>
+           <option value="1">Bussiness class</option>
+           <option value="2">Economy class</option>
+         </select>
+         <div class="form-check form-check-inline mt-4">
+           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+           <label class="form-check-label" for="inlineCheckbox1">Non Stop Flights</label>
+         </div>
+         <div class="form-check form-check-inline">
+           <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+           <label class="form-check-label" for="inlineCheckbox2">Student Fare</label>
+         </div>
+         <div style="margin-top: 35px;">
+           <button type="button" class="btn btn-primary btn-lg">Check Your Refund</button>
+           <button type="button" class="btn btn-danger btn-lg">Search Flights</button>
+         </div>
+       </div>
+
+       <datalist id=airports>
+        <option value=ATL label="Atlanta">
+          <option value=MEM label="Memphis">
+            <option value=LHR label="London Heathrow">
+              <option value=LAX label="Los Angeles">
+                <option value=FRA label="Frankfurt">
+                </datalist>
+              </div>
+            </div>
+          </body>
+          </html>
